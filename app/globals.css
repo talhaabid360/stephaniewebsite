@@ -720,7 +720,7 @@ footer a:last-child { color: var(--white); }
 @media (max-height: 42rem) and (min-width: 48rem) {
   .hero-sticky { min-height: 100svh; }
   .hero-stage { padding-top: 6.5rem; padding-bottom: 4.5rem; }
-  .hero-stage-opening h1 { font-size: clamp(2.9rem,8.5vh,5.5rem); max-width: 16ch; }
+  /* .hero-stage-opening h1 { font-size: clamp(2.9rem,8.5vh,5.5rem); max-width: 16ch; } */
   .hero-summary { margin-top: 1rem; }
   .primary-link { margin-top: 1rem; }
   .mobile-menu { padding-top: 7rem; padding-bottom: 1.5rem; }
