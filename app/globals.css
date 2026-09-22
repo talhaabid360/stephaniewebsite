@@ -709,7 +709,7 @@ footer a:last-child { color: var(--white); }
 }
 
 /* Short screens */
-@media (max-height: 52rem) and (min-width: 48rem) {
+@media (max-height: 55rem) and (min-width: 48rem) {
   .hero-sticky { min-height: 100svh; }
   .hero-stage { padding-top: 6.5rem; padding-bottom: 4.5rem; }
   .hero-stage-opening h1 { font-size: clamp(2.9rem,8.5vh,5.5rem); max-width: 16ch; }
