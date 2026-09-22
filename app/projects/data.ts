@@ -1,0 +1,268 @@
+export type Project = {
+  number: string;
+  slug: string;
+  name: string;
+  client: string;
+  location: string;
+  category: string;
+  statement: string;
+  summary: string;
+  details: string[];
+  services: string[];
+  image: string;
+  detailImage: string;
+  featured?: boolean;
+};
+
+export const projects: Project[] = [
+  {
+    number: "01",
+    slug: "inter-miami-chase-stadium",
+    name: "Inter Miami CF Chase Stadium",
+    client: "Miami Beckham United",
+    location: "Fort Lauderdale, Florida",
+    category: "Public-private partnership · Sporting",
+    statement: "A global vision delivered on an uncompromising timeline.",
+    summary: "Land use counsel, public-private partnership strategy and entitlements for Inter Miami CF's Fort Lauderdale campus.",
+    details: [
+      "Toothaker prepared and submitted the unsolicited proposal and led the complex public-private partnership negotiations and entitlements for David Beckham's Inter Miami CF campus in Fort Lauderdale.",
+      "The 21,500-seat Chase Stadium, 50,000-square-foot training facility and seven professional fields were delivered within 13 months, in time for the inaugural home game. The firm continues to guide Miami Beckham United as the club shapes a new era in South Florida's sporting legacy.",
+    ],
+    services: ["Land use counsel", "Public-private partnership strategy", "Entitlements", "Governmental relations"],
+    image: "/images/projects/inter-miami-chase-stadium.webp",
+    detailImage: "/images/projects/inter-miami-chase-stadium-detail.webp",
+    featured: true,
+  },
+  {
+    number: "02",
+    slug: "pier-sixty-six-reimagined",
+    name: "Pier Sixty-Six Reimagined",
+    client: "Tavistock Development Group",
+    location: "Fort Lauderdale, Florida",
+    category: "Hospitality · Waterfront development",
+    statement: "Reimagining an icon on Fort Lauderdale's waterfront.",
+    summary: "Land use and zoning leadership for the landmark $1 billion redevelopment of Pier Sixty-Six.",
+    details: [
+      "Toothaker has led the land use and zoning efforts for the landmark $1 billion redevelopment of Pier Sixty-Six, guiding the project from the original Development Agreement through site plan approvals and final permits.",
+      "The 32-acre destination brings together a reimagined 325-room resort, a world-class marina with 5,000 linear feet of dockage, 90 luxury residences, a marina promenade, 12 culinary venues and destination retail, anchored by the restored spire-topped hotel tower.",
+    ],
+    services: ["Land use and zoning", "Development agreement", "Site plan approvals", "Final permitting"],
+    image: "/images/projects/pier-sixty-six.webp",
+    detailImage: "/images/projects/pier-sixty-six-detail.webp",
+    featured: true,
+  },
+  {
+    number: "03",
+    slug: "ritz-carlton-residences-pompano-beach",
+    name: "Ritz-Carlton Residences, Pompano Beach",
+    client: "Fortune International Group · Oak Capital · Fairwinds",
+    location: "Pompano Beach, Florida",
+    category: "Luxury residential · Waterfront",
+    statement: "One vision. Two waterfront experiences.",
+    summary: "A multi-year entitlement and governmental strategy for an ocean-to-Intracoastal residential landmark.",
+    details: [
+      "Toothaker guided a multi-year, multifaceted strategy for the Ritz-Carlton Residences, Pompano Beach, with interiors by internationally acclaimed designer Piero Lissoni.",
+      "The firm secured complex land use, rezoning and site plan approvals, negotiated with neighboring stakeholders and advanced targeted lobbying efforts. It also entitled the project's luxury sales center through temporary-use and special-event approvals.",
+    ],
+    services: ["Land use", "Rezoning", "Site plan approvals", "Stakeholder strategy", "Temporary-use approvals"],
+    image: "/images/projects/ritz-carlton-pompano.webp",
+    detailImage: "/images/projects/ritz-carlton-pompano-detail.webp",
+    featured: true,
+  },
+  {
+    number: "04",
+    slug: "300-west-broward-boulevard",
+    name: "300 West Broward Boulevard",
+    client: "Kushner Development Companies",
+    location: "Fort Lauderdale, Florida",
+    category: "Mixed-use · Urban development",
+    statement: "A new gateway for Downtown Fort Lauderdale.",
+    summary: "Strategic upzoning and entitlement leadership for a 50-story mixed-use development.",
+    details: [
+      "Entrusted by Kushner Companies, Toothaker led the strategic upzoning of a landmark downtown site and navigated every stage of the entitlement process. It became the first project to seek alternative design modifications under the City's Downtown Master Plan.",
+      "The approved vision includes a bridged tower over a 10-story podium, 956 residential units, ground-floor retail and public plazas designed to strengthen pedestrian connections among Brightline Station, the Museum of Discovery and Science and the Broward Center for the Performing Arts.",
+    ],
+    services: ["Strategic upzoning", "Entitlements", "Alternative design modifications", "Governmental strategy"],
+    image: "/images/projects/300-west-broward.webp",
+    detailImage: "/images/projects/300-west-broward-detail.webp",
+    featured: true,
+  },
+  {
+    number: "05",
+    slug: "fort-lauderdale-international-boat-show",
+    name: "Fort Lauderdale International Boat Show",
+    client: "Informa · Marine Industries Association of South Florida",
+    location: "Fort Lauderdale, Florida",
+    category: "Brand activation · Marine industry",
+    statement: "Protecting a globally significant event and economic engine.",
+    summary: "Governmental engagement and lobbying strategy for the world's largest in-water boat show.",
+    details: [
+      "The Fort Lauderdale International Boat Show is a critical economic engine for South Florida, generating more than $1.7 billion in annual economic impact.",
+      "Representing Informa, Toothaker leads engagement with city, county and state stakeholders so the event's complex logistical needs are met and the marine industry's presence in Fort Lauderdale remains protected.",
+    ],
+    services: ["Governmental relations", "Lobbying", "Stakeholder engagement", "Event strategy"],
+    image: "/images/projects/flibs.webp",
+    detailImage: "/images/projects/flibs-detail.webp",
+    featured: true,
+  },
+  {
+    number: "06",
+    slug: "holiday-park-garage",
+    name: "Holiday Park Garage",
+    client: "Holiday Park Parking Partners",
+    location: "Fort Lauderdale, Florida",
+    category: "Civic infrastructure · Unsolicited proposal",
+    statement: "Civic infrastructure designed around public value.",
+    summary: "An unsolicited proposal for a multi-use public parking structure and Fire-Rescue/EMS substation.",
+    details: [
+      "The proposal brings together the design, development, financing, construction, operation and maintenance of a multi-use structure at Holiday Park.",
+      "Its program combines public parking, a surface-level public parking lot and a Fire-Rescue/EMS substation in a single civic infrastructure initiative.",
+    ],
+    services: ["Unsolicited proposal", "Public-private strategy", "Development planning", "Governmental process"],
+    image: "/images/projects/holiday-park-garage.webp",
+    detailImage: "/images/projects/holiday-park-garage-detail.webp",
+    featured: true,
+  },
+  {
+    number: "07",
+    slug: "fort-lauderdale-city-hall",
+    name: "Fort Lauderdale City Hall",
+    client: "FTL City Hall Partners",
+    location: "Fort Lauderdale, Florida",
+    category: "Civic development · Unsolicited proposal",
+    statement: "A new civic home imagined for the city's next chapter.",
+    summary: "An unsolicited proposal for the design, delivery, operation and maintenance of a new City Hall facility.",
+    details: [
+      "The FTL City Hall Partners proposal addresses the design, development, financing, construction, operation and maintenance of a new City Hall facility for Fort Lauderdale.",
+      "The initiative brings civic identity, public access and long-term delivery strategy into one consequential downtown project.",
+    ],
+    services: ["Unsolicited proposal", "Civic development strategy", "Public-private partnership", "Governmental process"],
+    image: "/images/projects/fort-lauderdale-city-hall.webp",
+    detailImage: "/images/projects/fort-lauderdale-city-hall-detail.webp",
+  },
+  {
+    number: "08",
+    slug: "riva-residenze",
+    name: "Riva Residenze",
+    client: "WellDuo · Vertical Developments · GCF Development",
+    location: "Fort Lauderdale, Florida",
+    category: "Waterfront residential",
+    statement: "Entitlement built through strategy and consensus.",
+    summary: "Land use counsel and community engagement for a premier waterfront residential development.",
+    details: [
+      "Toothaker served as land use counsel for Riva Residenze Fort Lauderdale, guiding the development through the City's regulatory process and securing site plan approvals.",
+      "The firm also led community outreach and negotiations with neighboring stakeholders, building consensus and addressing concerns that supported the project's successful entitlement.",
+    ],
+    services: ["Land use counsel", "Site plan approvals", "Community outreach", "Stakeholder negotiations"],
+    image: "/images/projects/riva-residenze.webp",
+    detailImage: "/images/projects/riva-residenze-detail.webp",
+  },
+  {
+    number: "09",
+    slug: "seaglass-rose-experience",
+    name: "The Seaglass Rosé Experience",
+    client: "AutoNation DRV PNK",
+    location: "Fort Lauderdale Beach, Florida",
+    category: "Special event · Brand activation",
+    statement: "An oceanside experience cleared to perform at its highest level.",
+    summary: "Special-event permitting and approvals for an immersive beachfront festival.",
+    details: [
+      "The Seaglass Rosé Experience engaged Toothaker to navigate special-event permitting and approvals for its Fort Lauderdale beachfront festival.",
+      "The firm's role protected compliance, production value and timelines for an experience featuring more than 30 rosé varietals, culinary talent and live entertainment.",
+    ],
+    services: ["Special-event permitting", "Land use approvals", "Regulatory coordination", "Production strategy"],
+    image: "/images/projects/seaglass.webp",
+    detailImage: "/images/projects/seaglass-detail.webp",
+  },
+  {
+    number: "10",
+    slug: "boucher-brothers-beach-concessions",
+    name: "Boucher Brothers Beach Concessions",
+    client: "Boucher Brothers",
+    location: "Fort Lauderdale Beach, Florida",
+    category: "Procurement · Hospitality",
+    statement: "Elevating the public beach through hospitality-led strategy.",
+    summary: "Procurement guidance and code strategy for Fort Lauderdale Beach concessions.",
+    details: [
+      "Toothaker guided Boucher Brothers in securing the City of Fort Lauderdale's Beach Equipment Rental Concession request for proposals across Fort Lauderdale Beach.",
+      "The firm also drafted a code amendment and secured approvals authorizing alcohol service on the beach, expanding concession value and elevating the guest experience.",
+    ],
+    services: ["Procurement", "Code amendment", "Governmental approvals", "Hospitality strategy"],
+    image: "/images/projects/boucher-brothers.webp",
+    detailImage: "/images/projects/boucher-brothers-detail.webp",
+  },
+  {
+    number: "11",
+    slug: "red-bull-global-rallycross",
+    name: "Red Bull Global Rallycross",
+    client: "Red Bull",
+    location: "Fort Lauderdale Beach, Florida",
+    category: "Elite sporting event",
+    statement: "Turning the beachfront into a world-class racecourse.",
+    summary: "Land use, permitting and governmental approvals for Fort Lauderdale's first Global Rallycross.",
+    details: [
+      "In 2015, Toothaker represented Red Bull in securing the land use, permitting and governmental approvals required to bring the first Red Bull Global Rallycross to Fort Lauderdale Beach.",
+      "The high-impact event transformed the public realm into an international racecourse and marked a milestone in the city's evolution as a destination for globally recognized events.",
+    ],
+    services: ["Land use approvals", "Permitting", "Governmental coordination", "Event strategy"],
+    image: "/images/projects/red-bull-rallycross.webp",
+    detailImage: "/images/projects/red-bull-rallycross-detail.webp",
+  },
+  {
+    number: "12",
+    slug: "swatch-beach-majors",
+    name: "Swatch Beach Majors Volleyball Series",
+    client: "Swatch",
+    location: "Fort Lauderdale Beach, Florida",
+    category: "Elite sporting event",
+    statement: "Olympic-level competition brought to the waterfront.",
+    summary: "Approvals, permitting and interagency coordination for an internationally televised tournament.",
+    details: [
+      "In 2017, Toothaker represented the organizers of the Swatch Beach Majors Volleyball Series in securing land use approvals, special-event permits and interagency coordination.",
+      "The internationally televised tournament brought Olympic-level competition to Fort Lauderdale Beach and strengthened the city's profile as a host for world-class sporting events.",
+    ],
+    services: ["Land use approvals", "Special-event permitting", "Interagency coordination", "Sporting-event strategy"],
+    image: "/images/projects/swatch-beach-majors.webp",
+    detailImage: "/images/projects/swatch-beach-majors-detail.webp",
+  },
+  {
+    number: "13",
+    slug: "iqos-florida-launch",
+    name: "IQOS Florida Launch",
+    client: "Philip Morris International",
+    location: "Fort Lauderdale, Florida",
+    category: "Market entry · Brand activation",
+    statement: "A global brand's first Florida market entry.",
+    summary: "Political, business-community and regulatory strategy for IQOS's Florida launch.",
+    details: [
+      "Philip Morris International engaged Toothaker to lead political and business-community introductions together with land use, zoning and permitting strategy for the first Florida launch of IQOS.",
+      "The firm continues to support the brand's Florida expansion, enabling activations, experiences and exclusive points of sale.",
+    ],
+    services: ["Political strategy", "Business-community engagement", "Land use and zoning", "Permitting"],
+    image: "/images/projects/iqos.webp",
+    detailImage: "/images/projects/iqos-detail.webp",
+  },
+  {
+    number: "14",
+    slug: "lauderdale-yacht-club-expansion",
+    name: "Lauderdale Yacht Club Expansion",
+    client: "Lauderdale Yacht Club",
+    location: "Fort Lauderdale, Florida",
+    category: "Hospitality · Waterfront",
+    statement: "Honoring an institution while preparing it for what comes next.",
+    summary: "Land use and zoning leadership for a 40,000-square-foot waterfront expansion.",
+    details: [
+      "Toothaker led the land use and zoning efforts for Lauderdale Yacht Club's transformative 40,000-square-foot, two-story expansion overlooking the Intracoastal Waterway.",
+      "The work holds personal significance for Stephanie, who made history as the prestigious club's first female Commodore, breaking an 80-year glass ceiling.",
+    ],
+    services: ["Land use", "Zoning", "Development approvals", "Waterfront strategy"],
+    image: "/images/projects/lauderdale-yacht-club.webp",
+    detailImage: "/images/projects/lauderdale-yacht-club-detail.webp",
+  },
+];
+
+export const featuredProjects = projects.filter((project) => project.featured);
+
+export function getProject(slug: string) {
+  return projects.find((project) => project.slug === slug);
+}
