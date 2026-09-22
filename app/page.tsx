@@ -156,7 +156,9 @@ export default function Home() {
 //   sticky.style.transform = `translate3d(0, ${pinDistance}px, 0)`;
 // }
 
-        const progress = clamp(-rect.top / Math.max(1, rect.height - viewport));
+        const stickyEl = heroRef.current.querySelector<HTMLElement>(".hero-sticky");
+        const stickyHeight = stickyEl?.offsetHeight || viewport;
+        const progress = clamp(-rect.top / Math.max(1, rect.height - stickyHeight));
         const opacities = [
           1 - smoothstep(range(progress, 0.17, 0.28)),
           smoothstep(range(progress, 0.22, 0.32)) * (1 - smoothstep(range(progress, 0.45, 0.56))),
