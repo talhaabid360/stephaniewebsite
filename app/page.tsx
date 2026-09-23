@@ -199,7 +199,8 @@ export default function Home() {
         }
         if (statementClaimRef.current) {
           statementClaimRef.current.style.opacity = String(claimOpacity);
-          statementClaimRef.current.style.transform = `translate3d(0, ${(1 - claimMove) * (compact ? 30 : 64)}px, 0)`;
+          // statementClaimRef.current.style.transform = `translate3d(0, ${(1 - claimMove) * (compact ? 30 : 64)}px, 0)`;
+          statementClaimRef.current.style.transform = "translate3d(0, 0, 0)";
         }
         if (statementPortraitRef.current) {
           statementPortraitRef.current.style.opacity = String(portraitOpacity);
