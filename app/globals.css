@@ -272,7 +272,8 @@ h1, h2, h3, p, dl, dd { margin: 0; }
 
 /* Statement */
 .statement { position: relative; height: 155svh; min-height: 66rem; background: var(--white); }
-.statement-sticky { position: sticky; top: 0; height: 100svh; min-height: 42rem; }
+/* .statement-sticky { position: sticky; top: 0; height: 100svh; min-height: 42rem; } */
+.statement-sticky { position: sticky; top: 0; height: 100svh; min-height: 0; }
 .statement-inner { display: grid; grid-template-rows: auto minmax(0,1fr); height: 100%; overflow: hidden; padding-block: clamp(6.35rem,8.5vh,7.5rem) 0; }
 .statement-inner > .section-tag { color: var(--gold); }
 .statement-motion { display: grid; grid-template-rows: auto minmax(0,1fr); gap: clamp(1rem,2vh,1.75rem); min-width: 0; min-height: 0; padding-top: clamp(1rem,2vh,1.5rem); }
