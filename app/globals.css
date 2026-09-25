@@ -822,7 +822,17 @@ footer a:last-child { color: var(--white); }
   .estefania-copy h2 { font-size: min(3.2rem,12.5vw); line-height: .96; }
   .difference { padding-block: 7.5rem; }
   .difference-grid { grid-template-columns: 1fr; }
-  .difference-title { font-size: clamp(1.8rem,8vw,2.6rem) !important; line-height: .92 !important; }
+  /* .difference-title { font-size: clamp(1.8rem,8vw,2.6rem) !important; line-height: .92 !important; } */
+  .difference-title {
+  font-size: clamp(1.65rem, 7vw, 2.25rem) !important;
+  line-height: .95 !important;
+  max-width: none !important;
+  width: 100%;
+  }
+
+  .difference-title span {
+  white-space: nowrap;
+  }
   .difference-grid h3 { overflow-wrap: anywhere; }
   .difference-grid article { grid-template-rows: auto auto 1fr; min-height: 14rem; border-right: 0; border-top: 1px solid var(--line); }
   .difference-grid article:first-child { border-top: 0; }
