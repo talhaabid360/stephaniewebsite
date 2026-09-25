@@ -940,9 +940,28 @@ footer a:last-child { color: var(--white); }
     padding-bottom: 0;
     min-height: 0;
   }
-  footer { grid-template-columns: 1fr auto; padding: 2rem var(--gutter) 2.5rem; }
+  /* footer { grid-template-columns: 1fr auto; padding: 2rem var(--gutter) 2.5rem; }
   footer > p { justify-self: end; }
-  footer > div { display: grid; grid-template-columns: 1fr; gap: .65rem; }
+  footer > div { display: grid; grid-template-columns: 1fr; gap: .65rem; } */
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem var(--gutter) 2.5rem;
+  }
+
+  footer > p {
+    display: none;
+  }
+
+  footer > div {
+    display: contents;
+  }
+
+  footer > div > *:not(:last-child) {
+    display: none;
+  }
 }
 
 /* Short screens */
