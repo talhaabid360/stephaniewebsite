@@ -220,7 +220,7 @@ h1, h2, h3, p, dl, dd { margin: 0; }
 
 /* Hero scroll narrative */
 .hero-journey { position: relative; height: 340svh; min-height: 165rem; background: var(--ink); }
-.hero-sticky { position: sticky; top: 0; height: 100svh; min-height: 40rem; overflow: hidden; background: var(--ink); color: var(--white); }
+.hero-sticky { position: sticky; top: 0; height: 100dvh; min-height: 40rem; overflow: hidden; background: var(--ink); color: var(--white); }
 .hero-media, .hero-shade, .hero-stage { position: absolute; inset: 0; }
 .hero-media { inset: -8%; will-change: transform; }
 .hero-media img, .hero-media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
@@ -594,9 +594,8 @@ footer a:last-child { color: var(--white); }
   .mobile-menu nav a { grid-template-columns: min(2.5rem,10vw) minmax(0,1fr); font-size: min(2.4rem,11vw); }
   .mobile-menu nav span, .menu-contact { font-size: min(.8rem,3.2vw); }
   [id] { scroll-margin-top: min(5.25rem,21.5vw); }
-  .hero-journey { height: 370svh; min-height: 0; }
-  /* .hero-sticky { min-height: min(34rem,140vw); } */
-  .hero-sticky { height: 100svh; min-hieght:0; ); 
+  .hero-journey { height: 370svh; min-height: min(145rem,590vw); }
+  .hero-sticky { min-height: min(34rem,140vw); }
   .hero-rule { top: min(5.25rem,21.5vw); bottom: min(1.35rem,5.5vw); left: calc(var(--gutter) / 2); }
   .hero-stage { padding: min(7.6rem,31vw) var(--gutter) min(6.5rem,26vw); }
   .hero-stage-opening h1 { max-width: 10.8ch; font-size: min(3.55rem,14.5vw); line-height: .92; }
@@ -613,22 +612,84 @@ footer a:last-child { color: var(--white); }
   .authority-intro, .projects-heading { padding-bottom: 5rem; }
   .authority-intro h2, .section-heading h2, .projects-heading h2, .stephanie-copy h2, .region-copy h2 { font-size: min(3.2rem,13vw); line-height: .91; }
   .authority-intro > p:last-child, .projects-heading > p:last-child { grid-column: 1; }
-  .logo-set { gap: 3.25rem; padding: 1.8rem 3.25rem 1.8rem 0; }
-  .logo-item { width: min(8rem,32vw); height: min(3.1rem,12.5vw); }
-  .logo-crest { width: min(4.25rem,17vw); height: min(4.25rem,17vw); }
-  .logo-stacked { width: min(6.5rem,26vw); }
-  .logo-wide { width: min(9.5rem,38vw); }
+  .logo-set { gap: min(2.75rem,11vw); padding: 1.8rem min(2.75rem,11vw) 1.8rem 0; }
+  .logo-item,
+  .logo-crest,
+  .logo-stacked,
+  .logo-wide {
+    width: min(8.5rem,34vw);
+    height: min(4rem,16vw);
+    place-items: center;
+  }
+  .logo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
   .statement { height: auto; min-height: 0; }
   .statement-sticky { position: relative; top: auto; height: auto; min-height: 0; }
-  .statement-inner { width: 100%; min-height: 100svh; overflow: hidden; padding: min(5rem,20vw) var(--gutter) 0; }
-  .statement-motion { gap: min(1.35rem,5vw); padding-top: min(1.35rem,5vw); }
-  .statement-sequence { grid-template-columns: 1fr; border-top: 0; }
-  .statement-sequence p { max-width: 20ch; padding: .58rem 0; border-right: 0; border-bottom: 1px solid var(--line); font-size: min(1.28rem,4.9vw); }
-  .statement-feature { grid-template-columns: minmax(0,.92fr) minmax(0,1.08fr); column-gap: .35rem; align-items: end; min-height: min(108vw,29rem); overflow: hidden; }
-  .statement-claim-frame { position: relative; z-index: 2; align-self: start; padding: min(1rem,4vw) 0 .25rem; }
-  .statement-claim { max-width: 8.7ch; font-size: min(2.08rem,8vw); line-height: .94; }
-  .statement-portrait { position: relative; z-index: 1; justify-self: end; width: 100%; height: min(108vw,29rem); min-height: 0; margin: 0; overflow: visible; }
-  .statement-portrait img { position: absolute; right: 0; bottom: 0; width: min(56vw,18rem); max-width: none; height: auto; object-fit: contain; object-position: right bottom; }
+  .statement-inner { display: block; width: 100%; min-height: 0; overflow: visible; padding: min(5rem,20vw) var(--gutter) 0; }
+  .statement-motion { display: block; padding-top: min(2rem,8vw); }
+  .statement-sequence {
+    grid-template-columns: 1fr;
+    gap: min(.8rem,3vw);
+    border: 0;
+    padding-bottom: min(6.5rem,26vw);
+  }
+  .statement-sequence p {
+    max-width: none;
+    padding: 0;
+    border: 0;
+    color: var(--muted);
+    font-size: min(1.38rem,5.6vw);
+    line-height: 1.15;
+  }
+  .statement-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100svh;
+    margin-inline: calc(var(--gutter) * -1);
+    padding: min(4.5rem,18vw) var(--gutter) 0;
+    overflow: hidden;
+    background: var(--white);
+  }
+  .statement-claim-frame {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    align-self: auto;
+    padding: 0;
+    overflow: visible;
+  }
+  .statement-claim {
+    max-width: 19ch;
+    margin-inline: auto;
+    font-size: min(1.35rem,5.35vw);
+    font-weight: 700;
+    letter-spacing: -.025em;
+    line-height: 1.12;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .statement-portrait {
+    position: relative;
+    z-index: 1;
+    width: min(82vw,21rem);
+    height: auto;
+    min-height: 0;
+    margin: min(1.75rem,7vw) auto 0;
+    overflow: visible;
+  }
+  .statement-portrait img {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center bottom;
+  }
   .projects-heading { padding-top: 5rem; padding-bottom: 3.5rem; }
   .project-chapter { min-height: auto; }
   .project-frame { position: relative; height: auto; min-height: 0; overflow: hidden; }
@@ -759,11 +820,13 @@ footer a:last-child { color: var(--white); }
   .statement { height: auto; min-height: 0; }
   .statement-sticky { min-height: 0; }
   .statement-inner { padding-top: 4.75rem; padding-bottom: 0; }
-  .statement-motion { gap: .8rem; padding-top: .75rem; }
-  .statement-sequence p { padding-block: .3rem; font-size: 1rem; }
-  .statement-claim { max-width: 9.1ch; font-size: min(1.85rem,8.5vw); line-height: .96; }
-  .statement-portrait { width: 100%; height: 18rem; }
-  .statement-portrait img { width: min(56vw,17rem); }
+  .statement-motion { padding-top: .75rem; }
+  .statement-sequence { padding-bottom: 4rem; }
+  .statement-sequence p { padding: 0; font-size: 1rem; }
+  .statement-feature { min-height: 100svh; padding-top: 3rem; }
+  .statement-claim { max-width: 19ch; font-size: min(1.2rem,5.35vw); line-height: 1.12; }
+  .statement-portrait { width: min(74vw,18rem); height: auto; }
+  .statement-portrait img { width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
