@@ -935,6 +935,11 @@ footer a:last-child { color: var(--white); }
   .contact h2, .contact h3 { font-size: min(3.65rem,14.8vw); line-height: .93; }
   .contact-title { gap: .75rem; }
   .contact-links { grid-template-columns: 1fr; gap: 1.6rem; margin-top: 4rem; }
+  .contact-links a {
+    border-bottom: 0;
+    padding-bottom: 0;
+    min-height: 0;
+  }
   footer { grid-template-columns: 1fr auto; padding: 2rem var(--gutter) 2.5rem; }
   footer > p { justify-self: end; }
   footer > div { display: grid; grid-template-columns: 1fr; gap: .65rem; }
