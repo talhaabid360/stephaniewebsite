@@ -644,8 +644,13 @@ export default function Home() {
 
       <footer>
         <a className="footer-brand" href="#top"><span className="brand-mark">T</span><span className="brand-name">Toothaker</span></a>
-        <p>Vision. Strategy. Approval.</p>
-        <div><span>Fort Lauderdale · Florida</span><span>© 2026 Toothaker.org</span><a href="#top">Back to top</a></div>
+        <p className="footer-tagline">Vision. Strategy. Approval.</p>
+        {/* <div><span>Fort Lauderdale · Florida</span><span>© 2026 Toothaker.org</span><a href="#top">Back to top</a></div> */}
+        <div className="footer-meta">
+          <span className="footer-location">Fort Lauderdale · Florida</span>
+          <span className="footer-copyright">© 2026 Toothaker.org</span>
+          <a className="footer-backtop" href="#top">Back to top</a>
+         </div>
       </footer>
     </main>
   );
