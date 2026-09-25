@@ -417,7 +417,16 @@ h1, h2, h3, p, dl, dd { margin: 0; }
 .difference .section-heading, .insights .section-heading { grid-template-columns: 1fr; gap: clamp(1.4rem,2vw,2.25rem); }
 .difference .section-heading h2, .insights .section-heading h2 { max-width: 12ch; }
 .difference-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); border-top: 1px solid var(--line); }
-.difference-title span { display: block; }
+/* .difference-title span { display: block;  } */
+.difference-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.difference-title span {
+  display: block;
+}
+
 .difference-grid article { display: grid; grid-template-rows: auto auto 1fr; align-content: start; min-width: 0; min-height: clamp(17rem,22vw,24rem); padding: clamp(1.5rem,2.7vw,3rem); border-right: 1px solid var(--line); }
 .difference-grid article:last-child { border-right: 0; }
 .difference-grid span { color: var(--gold); font-size: clamp(.92rem,.9vw,1.05rem); font-weight: 700; letter-spacing: .12em; }
