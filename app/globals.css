@@ -768,9 +768,9 @@ footer a:last-child { color: var(--white); }
   .project-brief { grid-template-columns: 1fr; gap: 1rem; padding-top: 1rem; }
   .project-brief p { font-size: .9rem; line-height: 1.55; }
   .project-brief a { justify-content: space-between; width: 100%; font-size: .74rem; }
-  .all-projects { display: grid; align-items: start; padding-block: 2.5rem 3rem; }
+  .all-projects { display: grid; align-items: start; gap: 0; padding-block: 2rem 2.25rem; }
   .all-projects .text-link { width: 100%; }
-  .stephanie { grid-template-columns: 1fr; gap: 4.5rem; padding-block: 7.5rem; }
+  .stephanie { grid-template-columns: 1fr; gap: 4.5rem; padding-block: 4rem 6rem; }
   .portrait-media { aspect-ratio: 1198 / 1800; }
   .stephanie-copy .section-tag { margin-bottom: 2rem; font-size: min(.9rem,3.5vw); }
   .stephanie-copy h2 { font-size: min(3.35rem,13.2vw); }
