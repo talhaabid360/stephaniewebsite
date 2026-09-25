@@ -859,6 +859,10 @@ footer a:last-child { color: var(--white); }
     border-top: 1px solid #000;
   }
 
+  .difference-grid article:nth-child(n + 3) {
+    border-top: 1px solid #000;
+  }
+
   .difference-grid p {
     min-height: 0;
   }
