@@ -934,7 +934,7 @@ footer a:last-child { color: var(--white); }
   .contact-inner { padding-block: 7rem 4rem; }
   .contact h2, .contact h3 { font-size: min(3.65rem,14.8vw); line-height: .93; }
   .contact-title { gap: .75rem; }
-  .contact-links { grid-template-columns: 1fr; gap: 1.6rem; margin-top: 4rem; }
+  .contact-links { grid-template-columns: 1fr; gap: 0.35rem; margin-top: 4rem; }
   .contact-links a {
     border-bottom: 0;
     padding-bottom: 0;
