@@ -856,7 +856,7 @@ footer a:last-child { color: var(--white); }
   }
 
   .difference-grid article:first-child {
-    border-top: 1px solid #000;
+    border-top: 0;
   }
 
   .difference-grid article:nth-child(n + 3) {
