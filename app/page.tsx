@@ -636,8 +636,8 @@ export default function Home() {
             <h3>Let’s make it possible.</h3>
           </div>
           <div className="contact-links">
-            <a href="mailto:stephanie@toothaker.org"><span>stephanie@toothaker.org</span></a>
-            <a href="tel:+19546489376"><span>954.648.9376</span></a>
+            <a href="mailto:stephanie@toothaker.org"><span>Contact:stephanie@toothaker.org</span></a>
+            <a href="tel:+19546489376"><span>Call Now:954.648.9376</span></a>
           </div>
         </div>
       </section>
