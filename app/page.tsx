@@ -435,7 +435,7 @@ export default function Home() {
             {[0, 1].map((setIndex) => (
               <div className="logo-set" key={setIndex} aria-hidden={setIndex === 1}>
                 {organizations.map((organization) => (
-                  <div className={`logo-item logo-${organization.shape}`} key={`${setIndex}-${organization.name}`}>
+                  <div className={`logo-item logo-${organization.shape}.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`} key={`${setIndex}-${organization.name}`}>
                     <img src={organization.logo} alt={setIndex === 0 ? `${organization.name} logo` : ""} loading="lazy" decoding="async" />
                   </div>
                 ))}
