@@ -495,7 +495,10 @@ export default function Home() {
           ))}
         </div>
         <div className="all-projects section-shell" data-reveal>
-          <p>{projects.length} selected projects across development, civic initiatives, hospitality and global events.</p>
+          {/* <p>{projects.length} selected projects across development, civic initiatives, hospitality and global events.</p> */}
+          <p className="projects-summary">
+            {projects.length} selected projects across development, civic initiatives, hospitality and global events.
+          </p>
           <Link className="text-link" href="/projects"><span>Explore all projects</span><ArrowUpRight /></Link>
         </div>
       </section>
