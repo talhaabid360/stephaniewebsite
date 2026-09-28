@@ -166,7 +166,7 @@ h1, h2, h3, p, dl, dd { margin: 0; }
   background: var(--white);
   transform: scaleX(0.01);
   transform-origin: left center;
-  animation: intro-load 4s linear 0.2s forwards;
+  animation: intro-load 2.5s linear 0.2s forwards;
 }
 
 .intro-disciplines {
