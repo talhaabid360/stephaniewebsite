@@ -393,8 +393,8 @@ export default function Home() {
         <div className="hero-sticky">
           <div className="hero-media" ref={heroMediaRef} data-overflow-allowed>
             <img src="/images/hero-south-florida-v2.webp" alt="South Florida waterfront development at golden hour" fetchPriority="high" />
-            <video autoPlay muted loop playsInline preload="metadata" poster="/images/hero-south-florida-v2.webp" aria-hidden="true">
-              <source src="https://videos.pexels.com/video-files/15177751/15177751-hd_1920_1080_30fps.mp4" type="video/mp4" />
+            <video autoPlay muted loop playsInline preload="auto" poster="/images/hero-south-florida-v2.webp" aria-hidden="true">
+              <source src="/videos/hero.mp4"  type="video/mp4" />
             </video>
           </div>
           <div className="hero-shade" />
