@@ -294,6 +294,51 @@ h1, h2, h3, p, dl, dd { margin: 0; }
   opacity: 1;
 }
 
+.logo-inter-miami-cf img {
+  width: 52%;
+  height: 82%;
+}
+
+.logo-pier-sixty-six img {
+  width: 88%;
+  height: 68%;
+}
+
+.logo-ritz-carlton-residences img {
+  width: 82%;
+  height: 72%;
+}
+
+.logo-moss img {
+  width: 78%;
+  height: 67%;
+}
+
+.logo-marriott img {
+  width: 70%;
+  height: 78%;
+}
+
+.logo-hilton img {
+  width: 67%;
+  height: 78%;
+}
+
+.logo-porsche img {
+  width: 47%;
+  height: 83%;
+}
+
+.logo-red-bull img {
+  width: 96%;
+  height: 72%;
+}
+
+.logo-broward-health img {
+  width: 94%;
+  height: 68%;
+}
+
 @keyframes logos-forward { to { transform: translateX(0); } }
 
 /* Statement */
